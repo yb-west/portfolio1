@@ -1,0 +1,218 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d3142;
+  background-color: #f4f6fb;
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  padding: 60px 20px 50px;
+  color: #ffffff;
+  background-color: #1f3a5f;
+  background-image:
+    linear-gradient(rgba(31, 58, 95, 0.85), rgba(31, 58, 95, 0.85)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='4' cy='4' r='2' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E");
+}
+
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #d6e4f5;
+}
+
+/* ---------- Navigation ---------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f0a500;
+  border-color: #f0a500;
+  color: #1f3a5f;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background-color: #f0a500;
+  color: #1f3a5f;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc233;
+  transform: translateY(-3px);
+}
+
+/* ---------- Sections ---------- */
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  margin: 30px 0;
+  padding: 30px;
+  border: 1px solid #dde3ee;
+  border-radius: 12px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #1f3a5f;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #f0a500;
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* ---------- About ---------- */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;   /* crops the photo to fill the circle without stretching it */
+  border: 5px solid #f0a500;
+  border-radius: 50%;
+}
+
+.about-content > div:last-child {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ---------- Cards (Flexbox) ---------- */
+.cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 20px;
+  background-color: #f4f6fb;
+  border: 1px solid #dde3ee;
+  border-left: 5px solid #f0a500;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(31, 58, 95, 0.18);
+}
+
+.card h3 {
+  color: #1f3a5f;
+  margin-bottom: 8px;
+}
+
+.project {
+  flex-basis: 300px;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: #55607a;
+}
+
+/* ---------- Contact form ---------- */
+form {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #b9c2d3;
+  border-radius: 8px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1f3a5f;
+  box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.15);
+}
+
+form .btn {
+  margin-top: 18px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #1f3a5f;
+}
+
+footer p {
+  margin: 0;
+}

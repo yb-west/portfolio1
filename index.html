@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adala Luke | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="home">
+    <h1>Adala Luke</h1>
+    <p class="tagline">Software Engineering Student &middot;FullStalk Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="profile.jpg" alt="Photo of [your name]" class="profile-pic">
+        <div>
+          <p><strong>Name:</strong> Adala Luke</p>
+          <p><strong>Course:</strong> Software Engineering</p>
+          <p><strong>Institution:</strong> Zetech University</p>
+          <p>
+            I am a 2nd-year Software Engineering student who enjoys building clean,
+            useful websites. I am looking for an internship where I can apply what
+            I have learned, work with a team and grow my skills in web development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>HTML</h3>
+          <p>Semantic, well-structured pages.</p>
+        </li>
+        <li class="card">
+          <h3>CSS</h3>
+          <p>Layouts, Flexbox and responsive styling.</p>
+        </li>
+        <li class="card">
+          <h3>Python</h3>
+          <p>Scripting and problem solving.</p>
+        </li>
+        <li class="card">
+          <h3>Database Management</h3>
+          <p>SQL queries and relational design.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card project">
+          <h3>Student Records System</h3>
+          <p>A small application for storing and searching student records, with simple reports.</p>
+          <p class="tech"><strong>Technologies:</strong> Python, SQLite</p>
+        </article>
+        <article class="card project">
+          <h3>Campus Events Page</h3>
+          <p>A responsive web page listing upcoming university events with a clean card layout.</p>
+          <p class="tech"><strong>Technologies:</strong> HTML, CSS</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> adallaluke76@gmail.com</p>
+      <p><strong>Phone:</strong> +254 758737826</p>
+
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Adala Luke. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
